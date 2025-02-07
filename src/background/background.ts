@@ -1,6 +1,6 @@
 chrome.webRequest.onBeforeRequest.addListener(
   (details) => {
-    console.log(details);
+    // console.log(details);
     const url = details.url;
     //all images contain the static work in url thats why all images are block on newyork time website
     const filters = [
@@ -11,6 +11,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     ];
     for (const filter of filters) {
       if (url.indexOf(filter) != -1) {
+        console.log(url);
         return {
           cancel: true,
         };
