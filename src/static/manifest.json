@@ -10,11 +10,11 @@
   },
   "permissions": ["declarativeNetRequest"],
   "declarative_net_request": {
-    "rules_resources": [
+    "rule_resources": [
       {
         "id": "ruleset_1",
         "enabled": false,
-        "path": "rules.jsn"
+        "path": "rules.json"
       }
     ]
   },
